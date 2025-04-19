@@ -6,6 +6,7 @@ int main(){
     int torre = 5;
     int bispo = 5;
     int rainha = 8;
+    int cavalo = 1;
 
     // Movimento de Torre - FOR
 
@@ -13,27 +14,36 @@ int main(){
     for (int i = 0; i < torre; i++){
         printf("Direita\n");   
     }
-    printf("Torre andou %d casas para direita \n", torre);
 
     // Movimento do Bispo - While
 
-    printf("Movimento do Bispo\n");
+    printf("\nMovimento do Bispo\n");
 
     while (bispo > 0){
         printf("Cima, Direita \n");
         bispo--;
     }
-    printf("Bispo andou 5 casas em diagonal \n");
 
     // Movimento Rainha - Do/While
     
-    printf("Movimento da Rainha \n");
+    printf("\nMovimento da Rainha \n");
     do {
         printf("Esquerda \n");
         rainha--;
 
     } while (rainha > 0 );
-    printf("Rainha andou 8 casas para esquerda\n");
+    
+    // Movimento Cavalo - For + While
+
+    printf("\nMovimento do Cavalo \n");
+
+    while (cavalo --)
+    {
+       for (int i = 0; i < 2; i++){
+        printf("Baixo \n");
+       }
+       printf("Esquerda \n");
+    }
     
     return 0;
 }
